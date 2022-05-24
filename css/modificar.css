@@ -1,0 +1,133 @@
+body{
+    font-family: Verdana, Tahoma;
+    background-color: #FFDEAD;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.tabla-cont{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin 3vmin;
+    border-radius: 30px;
+    margin: 4vmin 5vmin;
+    box-shadow: 1vmin 1vmin 10px #b6b1a3;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 4vmin;
+    color: black;
+    margin-top: 4vmin;
+    margin-bottom: 4vmin;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+h5{
+    font-size: 2.5vmin;
+    font-family: 'Quicksand';
+}
+
+.texto{
+    font-size: 3vmin;
+    color: black;
+    margin-bottom: 2vmin;
+    text-align: left;
+    font-family: 'Ubuntu Condensed';
+}
+
+.registros{
+    font-size: 3vmin;
+    color: black;
+    margin-top: 4vmin;
+    margin-bottom: 2vmin;
+    text-align: center;
+    font-family: 'Ubuntu Condensed';
+}
+
+.tabla{
+    border-spacing: 0;
+    padding: 1vmin 3vmin;
+    border-radius: 30px;
+    box-shadow: 1vmin 1vmin 10px #b6b1a3;
+    background: #f7f7f7;
+}
+
+th{
+    font-size: 2.8vmin;
+    font-family: 'Quicksand';
+    display: table-cell;
+    text-align: center !important;
+    
+}
+
+tr{
+    font-size: 2.8vmin;
+    font-family: 'Quicksand';
+}
+td{
+    width: auto;
+    display: table-cell;
+    border-top: #9ACD32 1px solid;
+    border-bottom: #9ACD32 1px solid;
+    text-align: left;
+}
+
+.icon-editar{
+    padding: 0.6vmin;
+    background:#87CEEB;
+    color: white;
+    border-radius: 1vmin;
+    text-decoration: none;
+}
+
+.icon-editar:hover{
+    background:#FFD700;
+    color: black;
+}
+
+.tabla td, .tabla th{
+    padding: 1vmin 4vmin;
+}
+
+.regresar{
+    text-align: right;
+    align-items: right;
+    font-size: 3vmin;
+    font-family: 'Ubuntu Condensed';
+    margin: 2vmin 2vmin;
+    text-decoration: none;
+    color: #778899;
+}
+
+.regresar a{
+    text-decoration: none;
+    color: #778899;
+}
+
+@media screen and (max-width: 600px){
+    .tabla-cont{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    } 
+        
+    td{
+        display: block;
+        width: 100%;
+    }
+
+    th{
+        display: none;
+    }
+}

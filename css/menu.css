@@ -1,0 +1,175 @@
+body{
+    font-family: Verdana, Tahoma;
+    background-color: #FFDEAD;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.formulario{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vmin 3vmin;
+    border-radius: 30px;
+    margin: 4vmin 5vmin;
+    box-shadow: 1vmin 1vmin 10px #b6b1a3;
+    align-items: center;
+}
+
+.menutitulo{
+    font-size: 4vmin;
+    color: black;
+    margin-top: 4vmin;
+    margin-bottom: 4vmin;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.realizar{
+    font-size: 3vmin;
+    color: black;
+    margin-top: 3vmin;
+    text-align: center;
+}
+
+.opciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#alta, #baja, #consulta, #modificar{
+    display: none;
+}
+
+.acciones label:hover{
+    background: #ffca9c;
+}
+
+#alta:checked ~ #lbl-alta, #baja:checked ~ #lbl-baja,
+#consulta:checked ~ #lbl-consulta, #modificar:checked ~ #lbl-modificar{
+    background-color: #ffa352;
+}
+
+.acciones label{
+    width: 15vmin;
+    border-radius: 2vmin;
+    padding-top: 6vmin;
+    padding-bottom: 6vmin;
+    color: black;
+    font-size: 4.5vmin;
+    background: #98FB98;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+}
+
+.opciones-tabla{
+    display: flex;
+    justify-content: stretch;
+}
+.tabla{
+    text-align: center;
+    display: contents;
+}
+
+.tabla label{
+    padding: 4vmin;
+    background: #98e4fb;
+    width: 40%;
+    border-radius: 2vmin;
+    color: black;
+    font-size: 3vmin;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu Condensed';
+}
+
+.tabla label img{
+    width: 30%;
+}
+
+.tabla label:hover{
+    background: #7bb1ca;
+}
+
+#alumnos, #contactos, #usuarios{
+    display: none;
+}
+
+#alumnos:checked ~ #lbl-alumnos, #contactos:checked ~ #lbl-contactos,
+#usuarios:checked ~ #lbl-usuarios{
+    background-color: #438cad;
+}
+
+.txt-op{
+    font-size: 3vmin;
+    color: black;
+    margin-top: 1vmin;
+    text-align: center;
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+    font-family: 'Ubuntu Condensed';
+}
+
+
+.botones{
+    margin-top: 3vmin;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.enviar, .borrar{
+    color: black;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    padding: 3vmin;
+    text-decoration: none;
+    margin-bottom: 1vmin;
+    margin-top: 2vmin;
+    text-align: center;
+    border: none;
+    font-family: 'Ubuntu Condensed';
+}
+
+.enviar{
+    background: #58e458;
+}
+
+.borrar{
+    background: #ADD8E6;
+}
+
+.enviar:hover, .borrar:hover{
+    background-color: #FFBF00;
+}
+
+.cerrar-sesion{
+    text-align: right;
+    align-items: right;
+    font-size: 3vmin;
+    font-family: 'Ubuntu Condensed';
+    margin: 3vmin 2vmin;
+    text-decoration: none;
+    color: #778899;
+}
+
+.cerrar-sesion a{
+    text-decoration: none;
+    color: #778899;
+}
